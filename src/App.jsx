@@ -28,8 +28,12 @@ function App() {
   return (
 	  <div className="back">
 	  <div className="auth">
-	  	<Auth />
+	  	{!session ? <Auth /> : <Account key={session.user.id} session={session} />}
 	  </div>
+
+	  /*<div>
+		<img src="CreddySetGo.png" width="400px"/>
+	  </div>*/
 	  </div>
   )
 }
