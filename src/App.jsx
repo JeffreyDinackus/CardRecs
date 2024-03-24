@@ -2,7 +2,6 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import { supabase } from './supabaseClient'
 import Auth from './Auth'
-import Account from './Account'
 
 
 
@@ -27,10 +26,11 @@ function App() {
 
 
   return (
-    <div className="container" style={{ padding: '50px 0 100px 0' }}>
-      {!session ? <Auth /> : <Account key={session.user.id} session={session} />}
-
-    </div>
+	  <div className="back">
+	  <div className="auth">
+	  	<Auth />
+	  </div>
+	  </div>
   )
 }
 

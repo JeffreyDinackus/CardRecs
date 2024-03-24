@@ -8,7 +8,11 @@ function main() {
 	var root = ReactDOMClient.createRoot(rootElement);
 
 	root.render(
-		jsx('<App />')
+		jsx('
+		<React.StrictMode>
+                	<App />
+            	</React.StrictMode>
+	    ')
 	);
 }
 
