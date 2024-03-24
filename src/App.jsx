@@ -2,8 +2,7 @@ import './App.css'
 import { useState, useEffect } from 'react'
 import { supabase } from './supabaseClient'
 import Auth from './Auth'
-
-
+import Account from './Account'
 
 
 function App() {
@@ -28,8 +27,12 @@ function App() {
   return (
 	  <div className="back">
 	  <div className="auth">
-	  	<Auth />
+	  	{!session ? <Auth /> : <Account key={session.user.id} session={session} />}
 	  </div>
+
+	  /*<div>
+		<img src="CreddySetGo.png" width="400px"/>
+	  </div>*/
 	  </div>
   )
 }
