@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,600;1,600&display=swap');
+
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+    text-decoration: underline; /* make sure the link is underlined */
+    text-decoration-color: white; /* change the underline color to white */
+    color: white;
+}
+
+body {
+	margin: 0;
+	font-family: "Arvo", sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	background-color: #4E3836;
+}
+
+
+.back {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+
+.auth {
+	display: flex;
+	width: 900px;
+	height: auto;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 25px;
+	padding: 15px;
+}
+
+.header {
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0;
+    line-height: 3rem;
+}
+
+button {
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+}
+
+input {
+	width: 100%;
+	padding: 15px;
+	border-radius: 8px;
+	outline: none;
+	border: 1px solid hsl(231, 7%, 60%);
+	margin-top: 6px;
+	color: hsl(234, 29%, 20%);
+}
